@@ -1,5 +1,5 @@
 # StepperTone
-An Arduino library to play tones using one or several stepper motors.
+An Arduino library to play tones using one or multiple stepper motors.
 
 The steppers must be driven by a driver with step/direction interface, such as the A4988 or the DRV8225.
 The code is based on the *micros()* and *millis()* functions. The code inside the *loop()* must be non-blocking.
