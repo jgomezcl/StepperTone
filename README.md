@@ -11,11 +11,9 @@ Tested with Arduino UNO but should work well in other platforms.
 
 **StepperTone** is the main class for controlling a single stepper motor.
 
-
 ### Constructor
 
 **StepperTone(int *direction_pin*, int *step_pin*, int *enable_pin*)**
-
 
 ### Methods
 
@@ -23,21 +21,17 @@ Tested with Arduino UNO but should work well in other platforms.
 
 Plays a tone with a specific frequency _pitch_ in Hz and a duration _duration_ in milliseconds. Notes are specified on the file **pitches.h** with the following notation: **NOTE_C3**, **NOTE_C4**, **NOTE_GS4**...
 
-
 **void play()**
 
 Main routine to generate the tones. Must be placed in the **loop()** section with other non-blocking code.
-
 
 **boolean isPlaying()**
 
 Returns *true* if the stepper is playing a tone. Useful to know when to play the next note in a song.
 
-
 **void setDirection(int *dir*)**
 
 Sets the rotation direction of the stepper. Can be set to clockwise using **DIR_CLOCKW** or counterclockwise using **DIR_CNTCLOCKW**. By default the rotation is set to clockwise.
-
 
 **void setActive(boolean *active*)**
 
